@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="yearReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PXr-lv-SbI">
+                                <rect key="frame" x="32" y="121" width="351" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Hq2-4v-cMz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rva-lJ-Cii">
+                                <rect key="frame" x="32" y="191" width="351" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="cIZ-CZ-OoJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X09-6f-Pya">
+                                <rect key="frame" x="162" y="255" width="90" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="tm1-Dd-NWX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Uz-fJ-JJr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Event:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIY-O1-ra6">
+                                <rect key="frame" x="32" y="374" width="351" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="4It-wv-2Ln"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Year:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIM-xc-Lk1">
+                                <rect key="frame" x="32" y="431" width="351" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYw-lh-pXY">
+                                <rect key="frame" x="162" y="317" width="90" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="hzt-lg-yYx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NAq-d7-aZn"/>
+                                    <action selector="saveButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BMh-m5-Fjm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VIY-O1-ra6" firstAttribute="trailing" secondItem="ZIM-xc-Lk1" secondAttribute="trailing" id="5CX-8Z-ouI"/>
+                            <constraint firstItem="PXr-lv-SbI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7s7-K9-GE4"/>
+                            <constraint firstItem="X09-6f-Pya" firstAttribute="trailing" secondItem="oYw-lh-pXY" secondAttribute="trailing" id="8St-Pw-yeT"/>
+                            <constraint firstItem="X09-6f-Pya" firstAttribute="top" secondItem="rva-lJ-Cii" secondAttribute="bottom" constant="30" id="DNY-7J-2lK"/>
+                            <constraint firstItem="X09-6f-Pya" firstAttribute="leading" secondItem="oYw-lh-pXY" secondAttribute="leading" id="GPS-B5-OeE"/>
+                            <constraint firstItem="rva-lJ-Cii" firstAttribute="trailing" secondItem="VIY-O1-ra6" secondAttribute="trailing" id="GaM-W1-9lB"/>
+                            <constraint firstItem="PXr-lv-SbI" firstAttribute="leading" secondItem="rva-lJ-Cii" secondAttribute="leading" id="H6G-PW-UnC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZIM-xc-Lk1" secondAttribute="bottom" constant="382" id="JgM-V9-wLO"/>
+                            <constraint firstItem="rva-lJ-Cii" firstAttribute="top" secondItem="PXr-lv-SbI" secondAttribute="bottom" constant="36" id="KIo-F2-X2I"/>
+                            <constraint firstItem="PXr-lv-SbI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="MXa-BN-ZRr"/>
+                            <constraint firstItem="PXr-lv-SbI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="T9m-i7-Acy"/>
+                            <constraint firstItem="rva-lJ-Cii" firstAttribute="leading" secondItem="VIY-O1-ra6" secondAttribute="leading" id="XlI-tX-y5O"/>
+                            <constraint firstItem="VIY-O1-ra6" firstAttribute="leading" secondItem="ZIM-xc-Lk1" secondAttribute="leading" id="dWD-8A-Mkz"/>
+                            <constraint firstItem="rva-lJ-Cii" firstAttribute="centerX" secondItem="X09-6f-Pya" secondAttribute="centerX" id="diE-9w-rJp"/>
+                            <constraint firstItem="PXr-lv-SbI" firstAttribute="trailing" secondItem="rva-lJ-Cii" secondAttribute="trailing" id="hYt-wx-Xc5"/>
+                            <constraint firstItem="oYw-lh-pXY" firstAttribute="top" secondItem="X09-6f-Pya" secondAttribute="bottom" constant="31" id="hYx-VU-XPS"/>
+                            <constraint firstItem="VIY-O1-ra6" firstAttribute="top" secondItem="oYw-lh-pXY" secondAttribute="bottom" constant="26" id="tq4-fq-ZgS"/>
+                            <constraint firstItem="X09-6f-Pya" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="z4n-Hd-p8Q"/>
+                            <constraint firstItem="ZIM-xc-Lk1" firstAttribute="top" secondItem="VIY-O1-ra6" secondAttribute="bottom" constant="8" id="zpG-ua-07P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="event" destination="PXr-lv-SbI" id="ADW-3y-1Aj"/>
+                        <outlet property="eventLabel" destination="VIY-O1-ra6" id="I4a-nt-y8G"/>
+                        <outlet property="year" destination="rva-lJ-Cii" id="Slm-c6-hiM"/>
+                        <outlet property="yearLabel" destination="ZIM-xc-Lk1" id="Mnn-mW-GJw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
