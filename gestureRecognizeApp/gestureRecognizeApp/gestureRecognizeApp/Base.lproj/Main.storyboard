@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gestureRecognizeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Furkan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVc-HJ-YXf">
+                                <rect key="frame" x="109" y="382" width="197" height="82"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="furkan" translatesAutoresizingMaskIntoConstraints="NO" id="YPh-lL-U4k">
+                                <rect key="frame" x="87" y="236" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="uCg-wd-MrP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YPh-lL-U4k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="BZ4-6r-24F"/>
+                            <constraint firstItem="kVc-HJ-YXf" firstAttribute="top" secondItem="YPh-lL-U4k" secondAttribute="bottom" constant="18" id="NYx-3Z-qjd"/>
+                            <constraint firstItem="YPh-lL-U4k" firstAttribute="centerX" secondItem="kVc-HJ-YXf" secondAttribute="centerX" id="YFj-1G-kO8"/>
+                            <constraint firstItem="YPh-lL-U4k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bGz-19-b0u"/>
+                            <constraint firstItem="YPh-lL-U4k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="192" id="oEI-f4-7A2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dejkoLabel" destination="kVc-HJ-YXf" id="rDD-rL-r8X"/>
+                        <outlet property="imageView" destination="YPh-lL-U4k" id="mUx-tG-gul"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="furkan" width="363" height="375"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
