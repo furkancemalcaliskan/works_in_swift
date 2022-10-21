@@ -7,10 +7,11 @@
 
 import Foundation
 
-class APIManager {
+
+class APIManager : UserService {
     
-    static let shared = APIManager()
-    private init() {}
+    /* static let shared = APIManager()
+    private init() {} */
     
     
     func fetchUser(completion: @escaping(Result<UserModel,Error>) -> Void) {

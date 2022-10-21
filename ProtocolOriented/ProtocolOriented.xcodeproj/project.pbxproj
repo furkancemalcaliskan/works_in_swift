@@ -17,6 +17,8 @@
 		71C904F929031D1E00267034 /* ProtocolOrientedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C904F829031D1E00267034 /* ProtocolOrientedUITestsLaunchTests.swift */; };
 		71C90509290321D200267034 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C90508290321D200267034 /* UserModel.swift */; };
 		71C9050B2903222100267034 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C9050A2903222100267034 /* APIManager.swift */; };
+		71C9050E2903257F00267034 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C9050D2903257F00267034 /* UserViewModel.swift */; };
+		71C905102903265900267034 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C9050F2903265900267034 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		71C904F829031D1E00267034 /* ProtocolOrientedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolOrientedUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		71C90508290321D200267034 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		71C9050A2903222100267034 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		71C9050D2903257F00267034 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		71C9050F2903265900267034 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +105,12 @@
 		71C904D429031D1D00267034 /* ProtocolOriented */ = {
 			isa = PBXGroup;
 			children = (
-				71C90507290321A300267034 /* Service */,
-				71C905062903219A00267034 /* View */,
+				71C9050C2903252C00267034 /* ViewModel */,
 				71C905052903219300267034 /* Model */,
+				71C905062903219A00267034 /* View */,
+				71C90507290321A300267034 /* Service */,
 				71C904D529031D1D00267034 /* AppDelegate.swift */,
 				71C904D729031D1D00267034 /* SceneDelegate.swift */,
-				71C904D929031D1D00267034 /* UserViewController.swift */,
 				71C904DE29031D1E00267034 /* Assets.xcassets */,
 				71C904E029031D1E00267034 /* LaunchScreen.storyboard */,
 				71C904E329031D1E00267034 /* Info.plist */,
@@ -142,6 +146,7 @@
 		71C905062903219A00267034 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				71C904D929031D1D00267034 /* UserViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,8 +155,17 @@
 			isa = PBXGroup;
 			children = (
 				71C9050A2903222100267034 /* APIManager.swift */,
+				71C9050F2903265900267034 /* UserService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		71C9050C2903252C00267034 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				71C9050D2903257F00267034 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +298,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C905102903265900267034 /* UserService.swift in Sources */,
 				71C904DA29031D1D00267034 /* UserViewController.swift in Sources */,
+				71C9050E2903257F00267034 /* UserViewModel.swift in Sources */,
 				71C904D629031D1D00267034 /* AppDelegate.swift in Sources */,
 				71C9050B2903222100267034 /* APIManager.swift in Sources */,
 				71C90509290321D200267034 /* UserModel.swift in Sources */,
