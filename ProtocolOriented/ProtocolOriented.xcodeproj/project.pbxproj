@@ -15,6 +15,8 @@
 		71C904ED29031D1E00267034 /* ProtocolOrientedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C904EC29031D1E00267034 /* ProtocolOrientedTests.swift */; };
 		71C904F729031D1E00267034 /* ProtocolOrientedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C904F629031D1E00267034 /* ProtocolOrientedUITests.swift */; };
 		71C904F929031D1E00267034 /* ProtocolOrientedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C904F829031D1E00267034 /* ProtocolOrientedUITestsLaunchTests.swift */; };
+		71C90509290321D200267034 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C90508290321D200267034 /* UserModel.swift */; };
+		71C9050B2903222100267034 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C9050A2903222100267034 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		71C904F229031D1E00267034 /* ProtocolOrientedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolOrientedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71C904F629031D1E00267034 /* ProtocolOrientedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolOrientedUITests.swift; sourceTree = "<group>"; };
 		71C904F829031D1E00267034 /* ProtocolOrientedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolOrientedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		71C90508290321D200267034 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		71C9050A2903222100267034 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,9 @@
 		71C904D429031D1D00267034 /* ProtocolOriented */ = {
 			isa = PBXGroup;
 			children = (
+				71C90507290321A300267034 /* Service */,
+				71C905062903219A00267034 /* View */,
+				71C905052903219300267034 /* Model */,
 				71C904D529031D1D00267034 /* AppDelegate.swift */,
 				71C904D729031D1D00267034 /* SceneDelegate.swift */,
 				71C904D929031D1D00267034 /* UserViewController.swift */,
@@ -122,6 +129,29 @@
 				71C904F829031D1E00267034 /* ProtocolOrientedUITestsLaunchTests.swift */,
 			);
 			path = ProtocolOrientedUITests;
+			sourceTree = "<group>";
+		};
+		71C905052903219300267034 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71C90508290321D200267034 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		71C905062903219A00267034 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71C90507290321A300267034 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				71C9050A2903222100267034 /* APIManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +286,8 @@
 			files = (
 				71C904DA29031D1D00267034 /* UserViewController.swift in Sources */,
 				71C904D629031D1D00267034 /* AppDelegate.swift in Sources */,
+				71C9050B2903222100267034 /* APIManager.swift in Sources */,
+				71C90509290321D200267034 /* UserModel.swift in Sources */,
 				71C904D829031D1D00267034 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
